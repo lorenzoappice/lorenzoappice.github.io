@@ -1,21 +1,9 @@
-h1 {
-    font-family: Futura,Trebuchet MS,Arial,sans-serif; 
-    font-size : 50px;
-    margin: 40px;
-}
-
-p {
-    font-size: 18px;
-    line-height: 1.6;
-    max-width: 650px;
-    margin: 42px;
-}
-
-
 .projects {
     padding-top: 50px;
-    margin-left: 400px;
+    margin-left: 410px;
     padding-bottom: 10px;
+    font-family: Futura,Trebuchet MS,Arial,sans-serif; 
+    font-size : 50px;
 }
 
 .projects-container {
@@ -69,6 +57,7 @@ p {
 .project-card h2,
 .project-card p,
 .project-button {
+    font-family: Futura,Trebuchet MS,Arial,sans-serif; 
     margin: 0;
     padding: 0;
 }
