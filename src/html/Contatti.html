@@ -1,59 +1,93 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contatti - Appice Lorenzo</title>
-    <link rel="stylesheet" href="..\css\sidebar.css">
-    <link rel="stylesheet" href="..\css\contatti.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contatti - Appice Lorenzo</title>
+  <link rel="stylesheet" href="..\css\sidebar.css">
+  <link rel="stylesheet" href="..\css\contatti.css">
 </head>
 <body style="background-color: #f9f9f9;">
 
-<div class="sidebar">
-  <div class="sidebar-content">
-    <div class="Image">
-      <img src="../../imgs/profile.jpeg" alt="Logo Appice Lorenzo" class="foto-menu">
+  <div class="sidebar">
+    <div class="sidebar-content">
+      <div class="Image">
+        <img src="..\..\imgs\profile.jpeg" alt="Logo Appice Lorenzo" class="foto-menu">
+      </div>
+      <div class="Site-name">
+        <h2>Appice Lorenzo</h2>
+      </div>
+      <div class="Navigation">
+        <ul>
+          <li><a href="..\..\index.html">Home</a></li>
+          <li><a href="curriculum.html">Curriculum</a></li>
+          <li><a href="contatti.html" class="active">Contatti</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="Site-name">
-      <h2>Appice Lorenzo</h2>
-    </div>
-    <div class="Navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="curriculum.html">Curriculum</a></li>
-        <li><a href="contatti.html" class = "active">Contatti</a></li>
-      </ul>
+    <div class="copyrights">
+      © Appice Lorenzo - All rights reserved
     </div>
   </div>
-  <div class="copyrights">
-    © Appice Lorenzo - All rights reserved
-  </div>
-</div>
 
-<div class="contatti-container">
-    <h1>Contattami</h1>
-    <p>Hai domande o vuoi collaborare con me? Compila il modulo o contattami tramite i canali sottostanti.</p>
+  <div class="contatti-container">
+    <div class="contenuto-contatti">
+      <!-- Colonna sinistra -->
+      <div class="colonna-sinistra">
+        <h1>Contatti:</h1>
+        <div class="box-info">
+          <img src="..\..\imgs\icons\phone-icon.png" alt="Telefono" class="icon">
+          <div>
+            <h3>Telefono</h3>
+            <p><a href="tel:+393292072401">+39 329 207 2401</a></p>
+          </div>
+        </div>
 
-    <form action="mailto:appicelorenzo@gmail.com" method="post" enctype="text/plain">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
+        <div class="box-info">
+          <img src="..\..\imgs\icons\gmail-icon.png" alt="Email" class="icon">
+          <div>
+            <h3>Email</h3>
+            <p><a href="mailto:appicelorenzo@gmail.com">appicelorenzo@gmail.com</a></p>
+          </div>
+        </div>
+
+        <div class="box-info">
+          <img src="..\..\imgs\icons\map-icon.png" alt="Residenza" class="icon">
+          <div>
+            <h3>Residenza</h3>
+            <p>Bari, Italia</p>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="colonna-destra">
+        <div class = "contatti-header">
+          <h1>Mandami un messaggio</h1>
+          <p>Sono aperto a collaborazioni freelance e nuove opportunità di lavoro.</p>
+        </div>
+      <form action="https://formspree.io/f/xqalpgnk" method="POST">
+        <label for="oggetto">Oggetto:</label>
+        <input type="text" id="oggetto" name="oggetto" required>
 
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
 
         <label for="messaggio">Messaggio:</label>
-        <textarea id="messaggio" name="messaggio" rows="5" required></textarea>
+        <textarea id="messaggio" name="message" rows="5" required></textarea>
 
         <button type="submit">Invia</button>
-    </form>
+      </form>
 
-    <div class="social-links">
-        <p>Oppure seguimi su:</p>
-        <a href="https://github.com/lorenzoappice" target="_blank">GitHub</a> |
-        <a href="https://linkedin.com/in/lorenzoappice" target="_blank">LinkedIn</a>  |
-        <a href="https://indeed.com/in/lorenzoappice" target="_blank">Indeed</a>
+        <div class="social-links">
+          <p>Oppure seguimi su:</p>
+          <a href="https://github.com/lorenzoappice" target="_blank">GitHub</a> |
+          <a href="https://linkedin.com/in/lorenzoappice" target="_blank">LinkedIn</a> |
+          <a href="https://indeed.com/in/lorenzoappice" target="_blank">Indeed</a>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
 
 </body>
 </html>

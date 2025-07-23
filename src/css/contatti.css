@@ -1,5 +1,5 @@
 .contatti-container {
-    margin-left: 340px;
+    margin-left: 500px;
     padding: 40px;
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
@@ -13,12 +13,73 @@
 
 .contatti-container p {
     margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+.contenuto-contatti {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.colonna-sinistra {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 300px;
+    margin-right: 20px;
+    margin-top: 80px;
+}
+
+.box-info {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    gap: 15px;
+}
+
+.box-info .icon {
+    width: 40px;
+    height: 40px;
+}
+
+.box-info h3 {
+    margin: 0;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.box-info p {
+    margin: 5px 0 0;
+    color: #555;
+}
+
+.box-info a {
+    text-decoration: none;
+    color: #007acc;
+}
+
+.box-info a:hover {
+    text-decoration: underline;
+}
+
+.colonna-destra {
+    flex: 2;
+    min-width: 300px;
+    margin-left: 20px;
+    margin-top: 80px;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    max-width: 500px;
+    max-width: 65%;
 }
 
 label {
@@ -65,3 +126,4 @@ button[type="submit"]:hover {
 .social-links a:hover {
     text-decoration: underline;
 }
+

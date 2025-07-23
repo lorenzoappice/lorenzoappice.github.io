@@ -76,6 +76,7 @@
 
 .sidebar ul li a.active {
   background-color: #f0f0f0;
+  border-right: 4px solid #555555;
 }
 
 
