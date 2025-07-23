@@ -1,89 +1,107 @@
-/* Reset dei margini e padding */
-body, h1, h2, h3, p, ul, li {
-    margin: 0;
-    padding: 0;
+h1 {
+    font-family: Futura,Trebuchet MS,Arial,sans-serif; 
+    font-size : 50px;
+    margin: 40px;
 }
 
-/* Stile del body */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 650px;
+    margin: 42px;
 }
 
-/* Stile dell'header */
-header {
-    background-color: #333;
-    color: #fff;
+
+.projects {
+    padding-top: 50px;
+    margin-left: 400px;
+    padding-bottom: 10px;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 50px;
+    padding: 10px;
+
+}
+
+.projects-scroll-container {
+    overflow-x: auto;
+    padding: 40px 0;
+    width: 1320px;
+    margin-left: 400px; 
+    padding-top : 0px;
+    padding-bottom: 20px;
+}
+
+
+/* Carta singola del progetto */
+.project-card {
+    flex: 0 0 auto;
+    width: 300px;
+    min-height: 500px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: center;
-    padding: 20px 0;
+    transition: transform 0.2s;
 }
 
-/* Stile della navigazione */
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+.project-card:hover {
+    transform: scale(1.03);
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #ff7f50; /* Cambia colore al passaggio del mouse */
-}
-
-/* Stile delle sezioni */
-section {
-    padding: 50px 20px;
-}
-
-/* Stile dei progetti */
-.project, .experience {
-    margin-bottom: 30px;
-}
-
-.project h3, .experience h3 {
-    color: #333;
-    margin-bottom: 10px;
-}
-
-/* Stile dei contatti */
-#contatti ul {
-    list-style-type: none;
-    margin-top: 20px;
-}
-
-#contatti ul li {
-    margin-bottom: 10px;
-}
-
-#contatti ul li a {
-    color: #333;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-#contatti ul li a:hover {
-    color: #ff7f50; /* Cambia colore al passaggio del mouse */
-}
-
-/* Stile del footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    position: fixed;
-    bottom: 0;
+.project-image {
     width: 100%;
+    height: 390px; /* immagine più alta */
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    flex-shrink: 0; /* evita che l’immagine si rimpicciolisca */
 }
+
+.project-card h2,
+.project-card p,
+.project-button {
+    margin: 0;
+    padding: 0;
+}
+
+.project-card p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Bottone */
+.project-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(145deg, rgba(0, 122, 255, 0.7), rgba(10, 132, 255, 0.9));
+    color: white;
+    text-decoration: none;
+    border-radius: 16px;
+    font-weight: 600;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.project-button:hover {
+    background: linear-gradient(145deg, rgba(0, 122, 255, 0.9), rgba(10, 132, 255, 1));
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    transform: scale(1.03);
+}
+
+.project-button:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
