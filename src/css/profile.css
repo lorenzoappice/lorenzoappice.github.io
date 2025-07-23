@@ -44,7 +44,7 @@
     margin: 42px;
 }
 
-/* ✅ Media query: adatta il layout sotto i 900px */
+/* Media query: adatta il layout sotto i 900px */
 @media screen and (max-width: 900px) {
     .profile {
         flex-direction: column;
