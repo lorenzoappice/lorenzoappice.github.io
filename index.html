@@ -1,100 +1,161 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portfolio Appice Lorenzo</title>
-    <link rel="stylesheet" href="src\css\cards.css">
-    <link rel="stylesheet" href="src\css\profile.css">
-    <link rel="stylesheet" href="src\css\sidebar.css">
+    <link rel="stylesheet" href="src/css/cards.css" />
+    <link rel="stylesheet" href="src/css/profile.css" />
+    <link rel="stylesheet" href="src/css/sidebar.css" />
 </head>
-<body style="background-color: #f9f9f9;">
+<body>
 
-    <div class="sidebar">
-  <div class="sidebar-content">
-    <div class="Image">
-      <img src="imgs\profile.jpeg" alt="Logo Appice Lorenzo" class="foto-menu">
-    </div>
-    <div class="Site-name">
-      <h2>Appice Lorenzo</h2>
-    </div>
-    <div class="Navigation">
-      <ul>
-        <li><a href="index.html" class = "active">Home</a></li>
-        <li><a href="src\html\curriculum.html">Curriculum</a></li>
-        <li><a href="src\html\Contatti.html">Contatti</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="copyrights">
-    © Appice Lorenzo - All rights reserved
-  </div>
-</div>
+    <!-- Bottone toggle per mobile/tablet -->
+    <button id="sidebarToggle" class="sidebar-toggle" aria-label="Apri/Chiudi menu">☰</button>
 
-
-
-<div class = "profile">
-    <div class="profile-picture">
-        <img class="foto" src="imgs\profile.jpeg" alt="Lorenzo Appice">
-    </div>
-    <div class = "profile-info">
-    <h1> Portfolio di Lorenzo Appice </h1>
-    <p>Benvenuti nel mio portfolio, mi chiamo Lorenzo Appice e sono un ragazzo appassionato dell'informatica.<br>
-        In particolare mi piace lo sviluppo software, la creazione di siti web e la programmazione in generale, mi piace imparare cose nuove e migliorare le mie compentenze.<br>
-        Qui sotto troverete alcuni dei miei progetti, spero vi piacciano!</p>
-    </div>
-</div>
-
-
-
-<h1 class = "projects">I miei progetti:</h1>
-<div class="projects-scroll-container">
-    <div class="projects-container">
-        
-        <div class="project-card">
-            <img src="imgs\projects\H_CLUS.jpg" alt="H_CLUS" class="project-image">
-            <h2>H-CLUS</h2>
-            <p>Sviluppo di un'applicazione in Java per eseguire clustering gerarchico (hierarchical clustering) su...</p>
-            <a href="https://github.com/lorenzoappice/H_CLUS" class="project-button" target="_blank" rel="noopener noreferrer">Leggi di più</a>
+    <div class="sidebar" role="navigation" aria-label="Menu di navigazione">
+        <div class="sidebar-content">
+            <div class="Image">
+                <img src="imgs/profile.jpeg" alt="Logo Appice Lorenzo" class="foto-menu" />
+            </div>
+            <div class="Site-name">
+                <h2>Appice Lorenzo</h2>
+            </div>
+            <div class="Navigation">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="src/html/curriculum.html">Curriculum</a></li>
+                    <li><a href="src/html/Contatti.html">Contatti</a></li>
+                </ul>
+            </div>
         </div>
-    
-         <div class="project-card">
-            <img src="imgs\projects\The-Tenth.jpg" alt="The Tenth" class="project-image">
-            <h2>The Tenth</h2>
-            <p>Progettazione completa dell’interfaccia utente di un’app social per facilitare l’organizzazione di partite...</p>
-            <a href="https://github.com/lorenzoappice/The-Tenth" class="project-button" target="_blank" rel="noopener noreferrer">Leggi di più</a>
+        <div class="copyrights">
+            © Appice Lorenzo - All rights reserved
         </div>
-    
-        <div class="project-card">
-            <img src="imgs\projects\ataxx.png" alt="Progetto COCKE" class="project-image">
-            <h2>Progetto COCKE</h2>
-            <p>Sviluppo del gioco da tavolo Ataxx a riga di comando, come progetto per l'esame di ...</p>
-            <a href="https://github.com/lorenzoappice/Progetto-COCKE" class="project-button" target="_blank" rel="noopener noreferrer">Leggi di più</a>
-        </div>
-
-        <div class="project-card">
-            <img src="imgs\projects\SOB.jpg" alt="Sense Of Blindness" class="project-image">
-            <h2>Sense of blindness</h2>
-            <p>Gioco educativo in realtà virtuale per sensibilizzare sulla disabilità visiva ...</p>
-            <a href="https://github.com/lorenzoappice/Progetto-COCKE" class="project-button" target="_blank" rel="noopener noreferrer">Leggi di più</a>
-        </div>
-
-        <div class="project-card">
-            <img src="imgs\projects\Oca.jpg" alt="Gioco dell'oca" class="project-image">
-            <h2>Gioco dell’oca</h2>
-            <p>Realizzazione di una versione testuale del Gioco dell’Oca, con possibilità di scegliere dinamicamente il numero ...</p>
-            <a href="https://github.com/lorenzoappice/Progetto-COCKE" class="project-button" target="_blank" rel="noopener noreferrer">Leggi di più</a>
-        </div>
-
-        <div class="project-card">
-            <img src="imgs\projects\World-Quiz.jpg" alt="World-Quiz" class="project-image">
-            <h2>World-Quiz</h2>
-            <p>Ho realizzato quest'applicazione interattiva a quiz per supportare le attività educative di  ...</p>
-            <a href="https://github.com/lorenzoappice/Progetto-COCKE" class="project-button" target="_blank" rel="noopener noreferrer">Leggi di più</a>
-        </div>
-
     </div>
-</div>
 
+    <div class="main-content">
+    <div class="profile">
+        <div class="profile-picture">
+            <img class="foto" src="imgs/profile.jpeg" alt="Lorenzo Appice" />
+        </div>
+        <div class="profile-info">
+            <h1>Portfolio di Lorenzo Appice</h1>
+            <p>
+                Benvenuti nel mio portfolio, mi chiamo Lorenzo Appice e sono un ragazzo appassionato
+                dell'informatica.<br />
+                In particolare mi piace lo sviluppo software, la creazione di siti web e la programmazione
+                in generale, mi piace imparare cose nuove e migliorare le mie compentenze.<br />
+                Qui sotto troverete alcuni dei miei progetti, spero vi piacciano!
+            </p>
+        </div>
+    </div>
+
+
+        <h1 class="projects">I miei progetti:</h1>
+        <div class="projects-scroll-container">
+            <div class="projects-container">
+                <!-- cards... (resto invariato) -->
+                <div class="project-card">
+                    <img src="imgs/projects/H_CLUS.jpg" alt="H_CLUS" class="project-image" />
+                    <h2>H-CLUS</h2>
+                    <p>
+                        Sviluppo di un'applicazione in Java per eseguire clustering gerarchico (hierarchical clustering) su...
+                    </p>
+                    <a href="https://github.com/lorenzoappice/H_CLUS" class="project-button" target="_blank" rel="noopener noreferrer"
+                        >Leggi di più</a
+                    >
+                </div>
+
+                <div class="project-card">
+                    <img src="imgs/projects/The-Tenth.jpg" alt="The Tenth" class="project-image" />
+                    <h2>The Tenth</h2>
+                    <p>
+                        Progettazione completa dell’interfaccia utente di un’app social per facilitare
+                        l’organizzazione di partite...
+                    </p>
+                    <a href="https://github.com/lorenzoappice/The-Tenth" class="project-button" target="_blank" rel="noopener noreferrer"
+                        >Leggi di più</a
+                    >
+                </div>
+
+                <div class="project-card">
+                    <img src="imgs/projects/ataxx.png" alt="Progetto COCKE" class="project-image" />
+                    <h2>Progetto COCKE</h2>
+                    <p>
+                        Sviluppo del gioco da tavolo Ataxx a riga di comando, come progetto per l'esame di ...
+                    </p>
+                    <a href="https://github.com/lorenzoappice/Progetto-COCKE" class="project-button" target="_blank" rel="noopener noreferrer"
+                        >Leggi di più</a
+                    >
+                </div>
+
+                <div class="project-card">
+                    <img src="imgs/projects/SOB.jpg" alt="Sense Of Blindness" class="project-image" />
+                    <h2>Sense of blindness</h2>
+                    <p>
+                        Gioco educativo in realtà virtuale per sensibilizzare sulla disabilità visiva ...
+                    </p>
+                    <a href="https://github.com/lorenzoappice/Progetto-COCKE" class="project-button" target="_blank" rel="noopener noreferrer"
+                        >Leggi di più</a
+                    >
+                </div>
+
+                <div class="project-card">
+                    <img src="imgs/projects/Oca.jpg" alt="Gioco dell'oca" class="project-image" />
+                    <h2>Gioco dell’oca</h2>
+                    <p>
+                        Realizzazione di una versione testuale del Gioco dell’Oca, con possibilità di scegliere dinamicamente il
+                        numero ...
+                    </p>
+                    <a href="https://github.com/lorenzoappice/Progetto-COCKE" class="project-button" target="_blank" rel="noopener noreferrer"
+                        >Leggi di più</a
+                    >
+                </div>
+
+                <div class="project-card">
+                    <img src="imgs/projects/World-Quiz.jpg" alt="World-Quiz" class="project-image" />
+                    <h2>World-Quiz</h2>
+                    <p>
+                        Ho realizzato quest'applicazione interattiva a quiz per supportare le attività educative di ...
+                    </p>
+                    <a href="https://github.com/lorenzoappice/Progetto-COCKE" class="project-button" target="_blank" rel="noopener noreferrer">Leggi di più</a >
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script per toggle sidebar -->
+    <script>
+        const toggleBtn = document.getElementById('sidebarToggle');
+        const sidebar = document.querySelector('.sidebar');
+        const body = document.body;
+
+        toggleBtn.addEventListener('click', () => {
+            sidebar.classList.toggle('open');
+            body.classList.toggle('sidebar-open');
+        });
+
+        // Chiudi sidebar se clicchi fuori da essa (solo su mobile)
+        document.addEventListener('click', (e) => {
+            if (
+                !sidebar.contains(e.target) &&
+                !toggleBtn.contains(e.target) &&
+                sidebar.classList.contains('open') &&
+                window.innerWidth <= 768
+            ) {
+                sidebar.classList.remove('open');
+                body.classList.remove('sidebar-open');
+            }
+        });
+
+        // Optional: chiudi la sidebar se si riduce la finestra sopra 768px
+        window.addEventListener('resize', () => {
+            if(window.innerWidth > 768) {
+                sidebar.classList.remove('open');
+                body.classList.remove('sidebar-open');
+            }
+        });
+    </script>
 </body>
 </html>

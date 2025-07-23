@@ -1,50 +1,53 @@
 .profile {
-    text-align: left;
-    margin-top: 100px;
-    margin-left: 200px;
-    align-items: center;
     display: flex;
+    align-items: flex-start; /* allinea in alto */
+    gap: 40px; /* spazio tra immagine e testo */
+    margin-top: 100px;
+    margin-left: 240px;
+    text-align: left;
     flex-wrap: wrap;
-    gap: 30px;
 }
 
-/* Immagine profilo */
 .profile-picture {
     border-radius: 50%;
     overflow: hidden;
     width: 300px;
     height: 300px;
-    display: block;
-    margin: 0;
     border: 2px solid #ccc;
     padding: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-left: 200px;
+    margin: 0; /* rimuovo margin-left */
+    flex-shrink: 0; /* evita che si rimpicciolisca */
 }
 
 .foto {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
     border-radius: 50%;
+    display: block;
 }
 
-/* Testo accanto all'immagine */
+.profile-info {
+    margin-top: 40px;
+    max-width: 650px;
+    display: flex;
+    flex-direction: column; /* titolo sopra descrizione */
+}
+
 .profile-info h1 {
     font-family: Futura, Trebuchet MS, Arial, sans-serif;
     font-size: 50px;
-    margin: 40px;
+    margin: 0 0 20px 0; /* margine sotto titolo */
 }
 
 .profile-info p {
     font-size: 18px;
     line-height: 1.6;
-    max-width: 650px;
-    margin: 42px;
+    margin: 0;
 }
 
-/* Media query: adatta il layout sotto i 900px */
+/* Media query per schermi piccoli */
 @media screen and (max-width: 900px) {
     .profile {
         flex-direction: column;
@@ -54,18 +57,17 @@
     }
 
     .profile-picture {
-        margin-left: 0;
         width: 200px;
         height: 200px;
+        margin-bottom: 20px;
     }
 
     .profile-info h1 {
         font-size: 36px;
-        margin: 20px;
+        margin-bottom: 10px;
     }
 
     .profile-info p {
-        margin: 20px;
         font-size: 16px;
         max-width: 90%;
     }

@@ -1,9 +1,9 @@
 .projects {
-    padding-top: 50px;
-    margin-left: 410px;
-    padding-bottom: 10px;
-    font-family: Futura,Trebuchet MS,Arial,sans-serif; 
-    font-size : 50px;
+    padding-top: 30px;
+    margin-left: 250px;
+    padding-bottom: 8px;
+    font-family: Futura, Trebuchet MS, Arial, sans-serif; 
+    font-size: 32px;
 }
 
 /* Per rendere responsive */
@@ -11,33 +11,34 @@
     .projects {
         margin-left: 0;
         text-align: center;
-        font-size: 36px;
+        font-size: 24px;
     }
 }
 
 .projects-container {
     display: flex;
     flex-wrap: nowrap;
-    gap: 50px;
-    padding: 10px;
+    gap: 40px; /* aumentato da 30 a 40 (+10) */
+    padding: 18px; /* aumentato da 8 a 18 (+10) */
 }
 
 /* Su schermi piccoli: abilitare il wrap e ridurre gap */
 @media screen and (max-width: 900px) {
     .projects-container {
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 25px; /* aumentato da 15 a 25 (+10) */
         justify-content: center;
+        padding: 18px; /* manteniamo padding */
     }
 }
 
 .projects-scroll-container {
     overflow-x: auto;
-    padding: 40px 0;
-    width: 1320px;
-    margin-left: 400px; 
-    padding-top : 0px;
-    padding-bottom: 20px;
+    padding: 20px 0;
+    width: 910px; /* aumentato da 900 a 910 (+10) */
+    margin-left: 230px; /* aumentato da 240 a 250 (+10) */
+    padding-top: 0;
+    padding-bottom: 15px;
 }
 
 /* Su schermi piccoli rendiamo container fluido */
@@ -45,20 +46,20 @@
     .projects-scroll-container {
         width: 100%;
         margin-left: 0;
-        padding: 20px 10px;
+        padding: 25px 18px; /* aumentato padding da 15px 8px a 25px 18px (+10) */
     }
 }
 
 /* Carta singola del progetto */
 .project-card {
     flex: 0 0 auto;
-    width: 300px;
-    min-height: 500px;
+    width: 230px; /* aumentato da 220 a 230 (+10) */
+    min-height: 380px; /* aumentato da 370 a 380 (+10) */
     background-color: #f9f9f9;
     border: 1px solid #ddd;
-    border-radius: 16px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    padding: 24px; /* aumentato da 14 a 24 (+10) */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -72,58 +73,61 @@
 
 .project-image {
     width: 100%;
-    height: 390px;
+    height: 280px;
     object-fit: cover;
-    border-radius: 12px;
-    margin-bottom: 15px;
+    border-radius: 10px;
+    margin-bottom: 12px;
     flex-shrink: 0;
 }
 
 /* Ridimensionamento immagini su schermi piccoli */
 @media screen and (max-width: 900px) {
     .project-card {
-        width: 90vw;
-        max-width: 320px;
+        width: 95vw; /* aumentato da 85vw a 95vw */
+        max-width: 270px; /* aumentato da 260 a 270 (+10) */
         min-height: auto;
+        padding: 24px; /* aggiunto padding aumentato anche qui */
     }
     .project-image {
         height: auto;
-        max-height: 250px;
+        max-height: 180px;
     }
 }
 
 .project-card h2,
 .project-card p,
 .project-button {
-    font-family: Futura,Trebuchet MS,Arial,sans-serif; 
+    font-family: Futura, Trebuchet MS, Arial, sans-serif; 
     margin: 0;
     padding: 0;
 }
 
 .project-card p {
-    font-size: 16px;
-    margin-bottom: 15px;
+    font-size: 14px;
+    margin-bottom: 12px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 /* Bottone */
 .project-button {
     display: inline-block;
-    padding: 12px 24px;
+    padding: 10px 20px;
     background: linear-gradient(145deg, rgba(0, 122, 255, 0.7), rgba(10, 132, 255, 0.9));
     color: white;
     text-decoration: none;
-    border-radius: 16px;
+    border-radius: 14px;
     font-weight: 600;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
 
 .project-button:hover {
     background: linear-gradient(145deg, rgba(0, 122, 255, 0.9), rgba(10, 132, 255, 1));
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
     transform: scale(1.03);
 }
 

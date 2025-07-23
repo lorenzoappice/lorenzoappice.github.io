@@ -9,26 +9,61 @@
 </head>
 <body style="background-color: #f9f9f9;">
 
-<div class="sidebar">
-  <div class="sidebar-content">
-    <div class="Image">
-      <img src="..\..\imgs\profile.jpeg" alt="Logo Appice Lorenzo" class="foto-menu">
-    </div>
-    <div class="Site-name">
-      <h2>Appice Lorenzo</h2>
-    </div>
-    <div class="Navigation">
-      <ul>
-        <li><a href="..\..\index.html">Home</a></li>
-        <li><a href="curriculum.html" class = "active">Curriculum</a></li>
-        <li><a href="Contatti.html">Contatti</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="copyrights">
-    © Appice Lorenzo - All rights reserved
-  </div>
-</div>
+    <!-- Bottone toggle per mobile/tablet -->
+    <button id="sidebarToggle" class="sidebar-toggle" aria-label="Apri/Chiudi menu">☰</button>
 
+    <div class="sidebar" role="navigation" aria-label="Menu di navigazione">
+        <div class="sidebar-content">
+            <div class="Image">
+                <img src="..\..\imgs\profile.jpeg" alt="Logo Appice Lorenzo" class="foto-menu" />
+            </div>
+            <div class="Site-name">
+                <h2>Appice Lorenzo</h2>
+            </div>
+            <div class="Navigation">
+                <ul>
+                    <li><a href="..\..\index.html" >Home</a></li>
+                    <li><a href="curriculum.html" class="active">Curriculum</a></li>
+                    <li><a href="Contatti.html">Contatti</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyrights">
+            © Appice Lorenzo - All rights reserved
+        </div>
+    </div>
+
+    <!-- Script per toggle sidebar -->
+    <script>
+        const toggleBtn = document.getElementById('sidebarToggle');
+        const sidebar = document.querySelector('.sidebar');
+        const body = document.body;
+
+        toggleBtn.addEventListener('click', () => {
+            sidebar.classList.toggle('open');
+            body.classList.toggle('sidebar-open');
+        });
+
+        // Chiudi sidebar se clicchi fuori da essa (solo su mobile)
+        document.addEventListener('click', (e) => {
+            if (
+                !sidebar.contains(e.target) &&
+                !toggleBtn.contains(e.target) &&
+                sidebar.classList.contains('open') &&
+                window.innerWidth <= 768
+            ) {
+                sidebar.classList.remove('open');
+                body.classList.remove('sidebar-open');
+            }
+        });
+
+        // Optional: chiudi la sidebar se si riduce la finestra sopra 768px
+        window.addEventListener('resize', () => {
+            if(window.innerWidth > 768) {
+                sidebar.classList.remove('open');
+                body.classList.remove('sidebar-open');
+            }
+        });
+    </script>
 </body>
 </html>
