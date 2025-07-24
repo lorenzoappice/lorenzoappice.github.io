@@ -124,38 +124,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Script per toggle sidebar -->
-    <script>
-        const toggleBtn = document.getElementById('sidebarToggle');
-        const sidebar = document.querySelector('.sidebar');
-        const body = document.body;
-
-        toggleBtn.addEventListener('click', () => {
-            sidebar.classList.toggle('open');
-            body.classList.toggle('sidebar-open');
-        });
-
-        // Chiudi sidebar se clicchi fuori da essa (solo su mobile)
-        document.addEventListener('click', (e) => {
-            if (
-                !sidebar.contains(e.target) &&
-                !toggleBtn.contains(e.target) &&
-                sidebar.classList.contains('open') &&
-                window.innerWidth <= 768
-            ) {
-                sidebar.classList.remove('open');
-                body.classList.remove('sidebar-open');
-            }
-        });
-
-        // Optional: chiudi la sidebar se si riduce la finestra sopra 768px
-        window.addEventListener('resize', () => {
-            if(window.innerWidth > 768) {
-                sidebar.classList.remove('open');
-                body.classList.remove('sidebar-open');
-            }
-        });
-    </script>
+  <script src="src\js\sidebar.js" defer> </script>
 </body>
 </html>
